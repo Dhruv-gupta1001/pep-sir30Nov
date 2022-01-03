@@ -1,0 +1,16 @@
+https://www.pepcoding.com/resources/online-java-foundation/linked-lists/display-linked-list-official/ojquestion
+
+public int size(){
+      // write code here
+      return size;
+    }
+
+    public void display(){
+      // write code here
+      for(Node temp=head;temp!=null;temp=temp.next){
+          System.out.print(temp.data+" ");
+      }
+      if(size!=0){
+          System.out.println();
+      }
+    }
