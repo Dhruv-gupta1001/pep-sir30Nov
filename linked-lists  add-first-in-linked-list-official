@@ -1,0 +1,16 @@
+https://www.pepcoding.com/resources/online-java-foundation/linked-lists/add-first-in-linked-list-official/ojquestion
+
+public void addFirst(int val) {
+      // write your code here
+      Node node= new Node();
+      node.data=val;
+      if(size==0){
+          head=tail=node;
+          node.next=null;
+      }
+      else{
+          node.next=head;
+          head=node;
+      }
+      size++;
+    }
