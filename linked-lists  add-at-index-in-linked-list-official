@@ -1,0 +1,25 @@
+https://www.pepcoding.com/resources/online-java-foundation/linked-lists/add-at-index-in-linked-list-official/ojquestion
+
+public void addAt(int idx, int val){
+      // write your code here
+      if(idx==0){
+          addFirst(val);
+      }else if(idx==size){
+          addLast(val);
+      }else if(idx<0 || idx>size){
+          System.out.println("Invalid arguments");
+      }else{
+          Node node=new Node();
+          node.data=val;
+          Node temp=head;
+          for(int i=1;i<=idx-1;i++){
+              temp=temp.next;
+          }
+          Node nm1=temp;
+          Node np1=nm1.next;
+          nm1.next=node;
+          node.next=np1;
+          size++;
+      }
+      
+    }
